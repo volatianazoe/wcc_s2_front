@@ -145,10 +145,10 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 44px;
+    width: 100px;
+    height: 36px;
     border-radius: 40px;
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     background: linear-gradient(45deg, #f06, #3cf, #f06);
     font-weight: 600;
