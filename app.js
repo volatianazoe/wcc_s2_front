@@ -29,4 +29,8 @@ function gameFactory(id) {
         mountGame(game3HTML(), "snake");
         return game3();
     }
+    if (id == 4) {
+        mountGame(flipcardHTML(), "flipcard");
+        return flipcard();
+    }
 }
