@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tia zaza</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container-list">
+            <div>
+                <h1>
+                    <span class="text-gradient">Tia</span>
+                    <span class="text-gradient">zaza</span>
+                </h1>
+                <br />
+
+                <div class="list-game">
+                    <div class="game" onclick="gameFactory(1)">
+                        <img src="./image/menja.png" />
+                        <h3 class="caption text-gradient">MENJA</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(2)">
+                        <img src="./image/colorblast.png" />
+                        <h3 class="caption text-gradient">COLOR BLAST</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(3)">
+                        <img src="./image/snake.png" />
+                        <h3 class="caption text-gradient">SNAKE</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(2)">
+                        <img src="./image/colorblast.png" />
+                        <h3 class="caption text-gradient">COLOR BLAST</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(3)">
+                        <img src="./image/snake.png" />
+                        <h3 class="caption text-gradient">SNAKE</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(1)">
+                        <img src="./image/menja.png" />
+                        <h3 class="caption text-gradient">MENJA</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(2)">
+                        <img src="./image/colorblast.png" />
+                        <h3 class="caption text-gradient">COLOR BLAST</h3>
+                    </div>
+                    <div class="game" onclick="gameFactory(3)">
+                        <img src="./image/snake.png" />
+                        <h3 class="caption text-gradient">SNAKE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="current-game">
+            <span class="close-game text-gradient" onclick="unmountGame()"
+                >X</span
+            >
+        </div>
+
+        <div class="animation">
+            <div class="animation-login">
+                <div class="circle small c1"></div>
+                <div class="circle small c2"></div>
+                <div class="circle extra-small c3"></div>
+                <div class="circle medium c4"></div>
+                <div class="circle medium c5"></div>
+                <div class="circle small c6"></div>
+                <div class="plus medium p1"></div>
+                <div class="plus medium p2"></div>
+                <div class="plus medium p3"></div>
+                <div class="plus small p4"></div>
+                <div class="plus extra-small p5"></div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/menja.js"></script>
+    <script src="js/colorblast.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="app.js"></script>
+</html>

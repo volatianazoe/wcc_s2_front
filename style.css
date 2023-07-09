@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.container-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-game {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.list-game .game {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.list-game .game img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgb(0 0 0/25%),
+        inset 2px 2px 5px rgb(255 255 255/ 25%),
+        inset -3px -3px 5px rgb(0 0 0/12%);
+}
+.list-game .caption {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (min-width: 576px) {
+    .list-game {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .list-game {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .list-game {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+.current-game {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    left: 100%;
+    transition: all 0.1s ease;
+}
+
+.close-game {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+}
+
+body {
+    background-color: #010622;
+}
+
+h1 {
+    color: rgba(230, 211, 10, 0.946);
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: oblique;
+    opacity: 0;
+    animation: slideTop 0.8s ease forwards;
+    animation-delay: 1s;
+    margin-bottom: 75px;
+}
+h1 span {
+    padding: 10px;
+}
+
+p {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    opacity: 0;
+    animation: slideTop 0.8s ease forwards;
+    animation-delay: 1s;
+}
+
+.btn1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    font-weight: 600;
+    border: none;
+    /* z-index: 1; */
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgb(0 0 0/25%),
+        inset 2px 2px 5px rgb(255 255 255/ 25%),
+        inset -3px -3px 5px rgb(0 0 0/12%);
+}
+
+.btn {
+    /* display: flex; */
+    margin-left: 45%;
+    z-index: 2;
+}
+
+.animation {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background-color: #010622; */
+}
+.circle,
+.plus::after,
+.plus::before {
+    position: absolute;
+    background: linear-gradient(45deg, #f06, #3cf);
+}
+.circle {
+    border-radius: 50%;
+}
+.circle,
+.plus {
+    transition: all 6s ease;
+    bottom: -30px;
+    animation-name: animate-circle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.plus {
+    position: absolute;
+}
+.plus::before,
+.plus::after {
+    content: "";
+}
+.plus::before {
+    top: 42.5%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+}
+.plus::after {
+    top: 0;
+    left: 42.5%;
+    width: 15%;
+    height: 100%;
+}
+.extra-small {
+    width: 15px;
+    height: 15px;
+}
+.small {
+    width: 20px;
+    height: 20px;
+}
+.medium {
+    width: 25px;
+    height: 25px;
+}
+.circle.c1 {
+    left: 30%;
+    animation-delay: -10.3s;
+}
+.circle.c2 {
+    left: 60%;
+    animation-delay: -10.3s;
+}
+.circle.c3 {
+    left: 10%;
+    animation-delay: -11s;
+}
+.circle.c4 {
+    left: 40%;
+    animation-delay: -12.4s;
+}
+.circle.c5 {
+    left: 80%;
+    animation-delay: -11.5s;
+}
+.circle.c6 {
+    left: 64%;
+    animation-delay: -11.9s;
+}
+.plus.p1 {
+    left: 25%;
+    animation-delay: -10.9s;
+}
+.plus.p2 {
+    left: 51%;
+    animation-delay: -11.5s;
+}
+.plus.p3 {
+    left: 70%;
+    animation-delay: -12.3s;
+}
+.plus.p4 {
+    left: 60%;
+    animation-delay: -11.7s;
+}
+.plus.p5 {
+    left: 35%;
+    animation-delay: -12s;
+}
+@keyframes animate-circle {
+    0% {
+        bottom: 100%;
+        opacity: 0;
+    }
+    100% {
+        bottom: -30px;
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
